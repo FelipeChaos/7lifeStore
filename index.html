@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/7lifefavicon (1).ico">
+    <title>7 Life Store</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo"><img src="Images/7life5-removebg-preview.png" class="menu-icono"></a>
+            <label for="menu"></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Carrito</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                        <lord-icon src="https://cdn.lordicon.com/xeltmrkz.json" trigger="loop" delay="500"
+                            state="loop-oscillate-empty" colors="primary:#918d10,secondary:#c71f16"
+                            style="width:50px;height:50px">
+                        </lord-icon>
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-content container">
+            <h1> 7 Life Store</h1>
+            <p>Aquí puedes encontrar los mejores productos para cuidar tu piel y tu cabello</p>
+        </div>
+        <div class="botons">
+            <a href="#" class="btn-1">Más Información</a>
+            <a href="#" class="btn-1">Menú</a>
+        </div>
+        <div class="socials-1 container">
+            <a href="https://www.instagram.com/7lifestore?utm_source=qr&igsh=MWQwc3RycjNwOWo2bw== " target="_blank"><img src="Images/instagram.png" alt="Instagram"></a>
+            <img src="Images/facebook.png" alt="Facebook">
+        </div>
+        <div class="arrow">
+            <a href="#contacto">
+                <img src="Images/abajo.png" alt="arrow">
+            </a>
+        </div>
+    </header>
+
+    <section class="Pocion container">
+        <div class="combos-1">
+            <h3>Los mejores combos de acuerdo a tu tipo de cabello de La Pocion</h3>
+            <hr>
+        </div>
+        <div class="combos-2">
+            <h2>Escoge el combo que mejor se acomode <br> a tu tipo de cabello</h2>
+        </div>
+    </section>
+
+    <section class="products" id="lista">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="producto">
+                        <h3>La Pocion</h3>
+                        <p class="precio">$35.000</p>
+                        <img src="Images/7life4.jpg" alt="pocion1">
+                        <p>Descripción del producto</p>
+                        <a href="#" class="agregarbtn-1" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="producto">
+                        <h3>La Pocion</h3>
+                        <p class="precio">$35.000</p>
+                        <img src="Images/7life4.jpg" alt="pocion2">
+                        <p>Descripción del producto</p>
+                        <a href="#" class="agregarbtn-1" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="producto">
+                        <h3>La Pocion</h3>
+                        <p class="precio">$35.000</p>
+                        <img src="Images/7life4.jpg" alt="pocion3">
+                        <p>Descripción del producto</p>
+                        <a href="#" class="agregarbtn-1" data-id="3">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="producto">
+                        <h3>La Pocion</h3>
+                        <p class="precio">$35.000</p>
+                        <img src="Images/7life4.jpg" alt="pocion4">
+                        <p>Descripción del producto</p>
+                        <a href="#" class="agregarbtn-1" data-id="4">Agregar al carrito</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+    <hr>
+    <section class="Fauno container">
+        <div class="combos-2">
+            <h2>Escoge el combo que mejor se acomode <br> a tu tipo de cabello de Fauno</h2>
+        </div>
+        <div class="combos-1">
+            <h3>Los mejores combos de acuerdo a tu tipo de cabello</h3>
+            <hr>
+        </div>
+    </section>
+
+    <section class="products" id="lista-2">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="producto">
+                        <h3 class="c1">La Pocion</h3>
+                        <p class="precio">$35.000</p>
+                        <img src="Images/7life4.jpg" alt="pocion1">
+                        <p class="c2">Descripción del producto</p>
+                        <a href="#" class="agregarbtn-2" data-id="5">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="producto">
+                        <h3 class="c1">La Pocion</h3>
+                        <p class="precio">$35.000</p>
+                        <img src="Images/7life4.jpg" alt="pocion2">
+                        <p class="c2">Descripción del producto</p>
+                        <a href="#" class="agregarbtn-2" data-id="6">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="producto">
+                        <h3 class="c1">La Pocion</h3>
+                        <p class="precio">$35.000</p>
+                        <img src="Images/7life4.jpg" alt="pocion3">
+                        <p class="c2">Descripción del producto</p>
+                        <a href="#" class="agregarbtn-2" data-id="7">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="producto">
+                        <h3 class="c1">La Pocion</h3>
+                        <p class="precio">$35.000</p>
+                        <img src="Images/7life4.jpg" alt="pocion4">
+                        <p class="c2">Descripción del producto</p>
+                        <a href="#" class="agregarbtn-2" data-id="8">Agregar al carrito</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+
+    <section class="contacto container" id="contacto">
+        <div class="contacto">
+            <hr>
+            <p>Contacto</p>
+        </div>
+    </section>
+
+
+    <footer class="footer container">
+
+        <div class="links">
+            <h3>Redes</h3>
+            <p>Siguenos en nuestras redes sociales</p>
+            <div class="socials-2">
+            <a href="https://www.instagram.com/7lifestore?utm_source=qr&igsh=MWQwc3RycjNwOWo2bw== " target="_blank"><img src="Images/instagram.png" alt="Instagram"></a>
+                <img src="Images/facebook.png" alt="Facebook">
+            </div>
+        </div>
+        <div class="link">
+            <h3>Productos La Pocion</h3>
+            <ul>
+                <li><a href="#">Tradicional</a></li>
+                <li><a href="#">Tongole</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Productos Fauno</h3>
+            <ul>
+                <li><a href="#">Café y Canabis</a></li>
+                <li><a href="#">Para risos</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Dejanos tu mensaje</h3>
+            <form>
+                <input type="text" placeholder="Nombre" class="inp">
+                <input type="email" name="Email" placeholder="Correo" class="inp">
+                <input type="number" placeholder="Teléfono" class="inp">
+                <textarea placeholder="Mensaje" class="inp"></textarea>
+                <input class="btn-4" type="submit" value="Enviar">
+            </form>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

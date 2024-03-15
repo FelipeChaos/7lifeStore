@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    justify-content: space-between;
+    background-color: #130909;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    justify-content: baseline ;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.menu-icono {
+    width: 350px;
+    margin: 0 10px;
+}
+
+.submenu {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.submenu #carrito {
+    display: none;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4e4b5076;
+    min-width: 400px;
+    min-width: 400px;
+}
+
+#lista-carrito tr{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+#lista-carrito th, #lista-carrito td{
+    flex: 1;
+    padding: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px 0;
+    width: 70%;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar ul li a:hover {
+    color: #ff7f0f;
+}
+
+.header-content {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.header-content p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.botons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.botons .btn-1 {
+    margin: 0 10px;
+    background-color: #ff7f0f;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botons .btn-1:hover {
+    background-color: #e64c00;
+}
+
+.socials-1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.socials-1 img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.arrow img {
+    width: 40px;
+}
+
+.Pocion,
+.Fauno {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.combos-1,
+.combos-2 {
+    margin-bottom: 40px;
+}
+
+.combos-1 h3,
+.combos-2 h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.products {
+    padding: 50px 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.swiper-button-prev::after {
+    font-size: 25px;
+}
+
+.swiper-button-next::after {
+    font-size: 25px;
+}
+
+.swiper-button-prev {
+    color: #c23811;
+}
+
+.swiper-button-next {
+    color: #c23811;
+}
+
+.swiper-pagination-bullet {
+    background-color: #d3d3d3;
+    opacity: 1;
+    top: 50px;
+}
+
+.swiper-pagination-bullet {
+    background-color: darkkhaki;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+}
+
+.producto h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px 0;
+    color: #111;
+}
+
+.precio {
+    font-size: 20px;
+    color: #ff7f0f;
+    margin-bottom: 20px;
+}
+
+.producto img {
+    width: 200px;
+    height: 10px;
+}
+
+.producto .precio {
+    margin-left: 10px;
+}
+
+.producto p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.btn-2,
+.btn-4 {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-2 {
+    background-color: #ff7f0f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-2:hover {
+    background-color: #e64c00;
+}
+
+.btn-4 {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #111;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-4:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+.footer {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    padding: 30px 0;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: auto;
+}
+
+.links {
+    margin-bottom: 40px;
+    width: 100%;
+    margin: 0;
+}
+
+.link {
+    width: 100%;
+}
+
+.link h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.link p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.link ul {
+    list-style: none;
+}
+
+.link ul li {
+    margin-bottom: 10px;
+}
+
+.link ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.link ul li a:hover {
+    color: #ff7f0f;
+}
+
+.socials-2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.socials-2 img {
+    width: 50px;
+    padding: 10px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.link form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto .inp {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    outline: none;
+}
+
+.contacto .btn-4 {
+    width: 200%;
+    color: #9acd32;
+    background-color: #9acd32;
+}
+
+.btn-4 {
+    background-color: #e04e2257;
+}
+.btn-4:hover {
+    background-color: #c23811;
+}
+
+@media (max-width: 991px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        margin-top: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .header-content {
+        padding: 50px 0;
+    }
+
+    .header-content h1 {
+        font-size: 36px;
+    }
+
+    .botons,
+    .socials,
+    .socials-2 {
+        flex-direction: column;
+    }
+
+    .arrow {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    .Pocion,
+    .Fauno {
+        padding: 50px 0;
+    }
+
+    .combos-1 h3,
+    .combos-2 h2 {
+        font-size: 30px;
+    }
+
+    .producto {
+        padding: 20px;
+    }
+
+    .btn-2,
+    .btn-4 {
+        width: 100%;
+    }
+
+    .link {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
